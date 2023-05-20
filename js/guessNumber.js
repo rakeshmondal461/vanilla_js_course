@@ -49,6 +49,4 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('body').style.background = '#222';
   document.querySelector('.number').style.width = '8rem';
-
-  console.log('clicked on again button');
 });
