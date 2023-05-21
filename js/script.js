@@ -87,6 +87,17 @@
 //   `${emp.empName} has ${emp.skills.length} skills, and his best skill is ${emp.skills[0]}`
 // );
 
+// The Object.freeze() static method freezes an object. Freezing an object prevents extensions and makes existing properties non-writable and non-configurable. A frozen object can no longer be changed
+// Object.freeze(emp);
+// emp.prop = 33;
+// console.log(Object.entries(emp));
+
+// The Object.hasOwn() static method returns true if the specified object has the indicated property as its own property. If the property is inherited, or does not exist, the method returns false.
+//console.log(Object.hasOwn(emp, 'empName2'));
+
+// The Object.keys() static method returns an array of a given object's own enumerable string-keyed property names.
+// console.log(Object.keys(emp));
+
 // ACCESS OBJECT DATA WITH KEY=>VALUE PAIR
 // for (const [key, value] of Object.entries(emp)) {
 //   console.log(`${key}: ${value}`);
