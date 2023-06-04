@@ -1,5 +1,20 @@
 'use strict';
 
+// const xyz = () => {
+//   var abc = 115;
+//   console.log(abc);
+// };
+
+// xyz();
+
+// let x = 1000;
+// console.log(x);
+
+// let y;
+
+// getValue();
+// console.log(x);
+
 // let drivingLisence = false;
 // const passedTest = true;
 
@@ -52,16 +67,16 @@
 // INTRODUCTION TO ARRAY
 
 // INTRODUCTION TO OBJECTS
-
-// const emp = {
-//   id: 'EMP001',
-//   empName: 'Rakesh Mondal',
-//   guardianName: 'Rajib Mondal',
-//   desg: 'Software developer',
-//   age: 28,
-//   skills: ['Javascript', 'React', 'React Native', 'Node JS'],
-// };
-
+/*
+const emp = {
+  id: 'EMP001',
+  empName: 'Rakesh Mondal',
+  guardianName: 'Rajib Mondal',
+  desg: 'Software developer',
+  age: 28,
+  skills: ['Javascript', 'React', 'React Native', 'Node JS'],
+};
+*/
 // console.log(emp);
 
 // ACCESSING THE OBJECT PROPERTY
@@ -102,3 +117,140 @@
 // for (const [key, value] of Object.entries(emp)) {
 //   console.log(`${key}: ${value}`);
 // }
+
+// ASSIGN NEW VALUE TO EXISTING OBJECT
+
+// const returnedEmp = Object.assign(emp, { hobbies: ['Walking', 'Cycling'] });
+// console.log('returnedEmp=>', returnedEmp);
+
+// let name = 'Rakesh';
+// const user = {
+//   name: 'Rakesh Mondal',
+//   age: 27,
+//   email: 'mondaltakesh461@gmail.com',
+//   mob: '9382843427',
+//   skills: ['C', 'C++', 'JavaScript'],
+//   address: { vill: 'Charmahatpur', po: 'Rupdaha' },
+// };
+
+// CHANGING NAME AND SET DEFAULT VALUES OF OBJECT PROPERTY
+// const { age: userAge, hobbies: userHobbies = [] } = user;
+
+// console.log(userAge);
+// console.log(userHobbies);
+// MUTATING VALUES USING OBJECT PROPERTY
+// ({ name } = user);
+// console.log(name);
+
+// OBJECT DESTRUCTURING
+// const {
+//   address: { vill, po },
+// } = user;
+
+// console.log(vill);
+// console.log(po);
+// const skills = ['C', 'C++', 'JavaScript'];
+// const GREET = 'HELLO JAVASCRIPT';
+
+// console.log(...skills);
+// console.log(...GREET);
+
+// const numberList = [
+//   prompt('Enter first number'),
+//   prompt('Enter second number'),
+//   prompt('Enter third number'),
+// ];
+
+// const nnn = [...numberList];
+
+// HERE other VARIABLE HAS REST OF THE VALUES OF ARRAY.
+// const [javascript, ...others] = [
+//   'Javascript',
+//   'Python',
+//   'PHP',
+//   'JAVA',
+//   'C++',
+//   'HTML',
+//   'CSS',
+// ];
+
+// console.log(javascript);
+// console.log(others);
+// HERE WE ARE USING REST PARAMS
+// function showValues(...args) {
+//   console.log(args);
+// }
+
+//showValues(4, 8, 12, 30, 45);
+
+// const game = [
+//   'Burki',
+//   'Schulz',
+//   'Hummels',
+//   'Akanji',
+//   'Hakimi',
+//   'Weigl',
+//   'Witsel',
+//   'Hazard',
+//   'Brandt',
+//   'Sancho',
+//   'Gotze',
+// ];
+
+// for (const [index, val] of game.entries()) {
+//   console.log(`${index + 1} => ${val}`);
+// }
+/*
+const fields = ['name', 'age', 'email'];
+
+const userdet = {
+  [fields[0]]: 'Rakesh Mondal',
+  [fields[1]]: 27,
+  [fields[2]]: 'mondalrakesh461@gmail.com',
+};
+
+console.log('userdet>>>', userdet);
+
+const newMap = new Map();
+
+newMap.set('userName', 'Rakesh Mondal');
+newMap.set('age', 28);
+newMap.set('address', 'CharMahatpur');
+newMap.set('age', 29);
+
+console.log(newMap);
+*/
+
+// var totn_string = 'TechOnTheNet';
+// const lastStr = totn_string.slice(-4);
+// console.log(lastStr.padStart(totn_string.length, '*'));
+
+// const p =
+//   'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+// console.log(p.replace('dog', 'monkey'));
+
+// const hello1 = [];
+// console.log('hello1 before', hello1);
+// function addValue() {
+//   hello1.push('Hello javascript');
+// }
+
+// addValue();
+// console.log('hello1 after', hello1);
+
+// const flight = 'LH234';
+// const jonas = {
+//   name: 'Rakesh Mondal',
+//   passport: 4583657829,
+// };
+
+// const checkIn = function (flightNum, { ...passenger }) {
+//   flightNum = 'LH999';
+//   passenger.name = 'Mr. ' + passenger.name;
+//   console.log(`${passenger.name}, your flight number is: ${flightNum}`);
+// };
+
+// checkIn(flight, jonas);
+// console.log(flight);
+// console.log(jonas);
