@@ -1,5 +1,7 @@
 'use strict';
 
+// IMPLEMENTATION OF CLOSURE
+
 function x() {
   const users = [];
   function addUser(userName) {
@@ -23,7 +25,15 @@ z.addUser('Rajesh');
 z.addUser('Rahul');
 z.removeUser('Rajesh');
 
-// console.dir(z);
+/*
+COMMON EXAMPLE
+function init() {
+  var name = 'Mozilla'; 
+  return function displayName() {
+    console.log(name); 
+  };
+}
+const x = init(); // Here not only a function was returned, but a closure was
+x();
 
-// z('Rakesh');
-// z('Rajesh');
+*/

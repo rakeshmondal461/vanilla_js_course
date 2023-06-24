@@ -18,6 +18,8 @@ jetairways.book(154, 'Rakesh Mondal');
 // COPYING THE FUNCTION
 const book = jetairways.book;
 
+book();
+
 const indigo = {
   airline: 'IndiGo',
   iataCode: '6E',

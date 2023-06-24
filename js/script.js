@@ -230,27 +230,54 @@ console.log(newMap);
 
 // console.log(p.replace('dog', 'monkey'));
 
-// const hello1 = [];
-// console.log('hello1 before', hello1);
-// function addValue() {
-//   hello1.push('Hello javascript');
-// }
+/*
 
-// addValue();
-// console.log('hello1 after', hello1);
+const hello1 = [];
+console.log('hello1 before', hello1);
+function addValue() {
+  hello1.push('Hello javascript');
+}
 
-// const flight = 'LH234';
-// const jonas = {
-//   name: 'Rakesh Mondal',
-//   passport: 4583657829,
-// };
+addValue();
+console.log('hello1 after', hello1);
 
-// const checkIn = function (flightNum, { ...passenger }) {
-//   flightNum = 'LH999';
-//   passenger.name = 'Mr. ' + passenger.name;
-//   console.log(`${passenger.name}, your flight number is: ${flightNum}`);
-// };
 
-// checkIn(flight, jonas);
-// console.log(flight);
-// console.log(jonas);
+
+const flight = 'LH234';
+const jonas = {
+  name: 'Rakesh Mondal',
+  passport: 4583657829,
+};
+
+const checkIn = function (flightNum, { ...passenger }) {
+  flightNum = 'LH999';
+  passenger.name = 'Mr. ' + passenger.name;
+  console.log(`${passenger.name}, your flight number is: ${flightNum}`);
+};
+
+checkIn(flight, jonas);
+console.log(flight);
+console.log(jonas);
+
+*/
+
+/*
+const arr = ['pizza', 'berger', 'sandwich', 'momo'];
+setTimeout(
+  (...arg) => {
+    console.log(`You ordered ${arg}`);
+  },
+  2500,
+  ...arr
+);
+
+*/
+
+/*
+
+setInterval(() => {
+  console.log(
+    `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
+  );
+}, 1000);
+*/
