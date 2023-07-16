@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../js/event_propogate.js" defer></script>
+    <style>
+      #topouter {
+        background-color: red;
+        padding: 15px;
+      }
+      #outer {
+        background-color: yellow;
+        padding: 10px;
+      }
+      #inner {
+        background-color: blue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="topouter">
+      <div id="outer">
+        Click Me!
+        <div id="inner">Inner</div>
+      </div>
+    </div>
+  </body>
+</html>

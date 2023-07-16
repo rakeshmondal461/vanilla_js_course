@@ -28,6 +28,24 @@
       .contain {
         display: flex;
       }
+      .top-root {
+        margin-block: 15px;
+        background-color: cyan;
+        padding: 20px;
+      }
+      .sub-top-root {
+        background-color: magenta;
+        padding: 20px;
+      }
+      .top-inner-div {
+        background-color: yellow;
+        padding: 20px;
+      }
+      .inner-div {
+        background-color: black;
+        padding: 20px;
+        color: #fff;
+      }
     </style>
     <script src="../js/adv_dom.js" async></script>
   </head>
@@ -41,6 +59,21 @@
       <div class="right">
         <button id="addBtn">Add</button>
         <button id="removeBtn">Remove</button>
+
+        <button id="about">About</button>
+
+        <div class="top-root">
+          <p>TOP ROOT</p>
+          <div class="sub-top-root">
+            <p>SUB TOP ROOT</p>
+            <div class="top-inner-div">
+              <p>TOP INNER ROOT</p>
+              <div class="inner-div">
+                <p>INNER DIV</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

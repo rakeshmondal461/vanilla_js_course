@@ -40,3 +40,12 @@ removeBtn.addEventListener('click', () => {
   const boxArr = Array.from(boxes1);
   boxArr.length > 0 && boxArr[0].remove();
 });
+
+const toprootdiv = document.querySelector('.top-root');
+
+const innerdiv = document.querySelector('.inner-div');
+const closetel = innerdiv.closest('.top-root');
+console.log(closetel);
+console.log('traverse downwards>>>>', toprootdiv.closest('.top-inner-div'));
+
+console.log({ userName: 'User 1', passwors: 'Password' });
