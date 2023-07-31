@@ -1,8 +1,130 @@
 'use strict';
 
-const arr = ['a', 'b', 'c', 'd', 'e'];
+const arr = ['z', 'a', 'b', 'x', 'c', 'd', 'e'];
 
 /*
+// CREATING ARRAY FROM OBJECT
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+};
+
+console.log('>>>>>', Object.entries(person));
+console.log('>>>>>', Object.keys(person));
+console.log('>>>>>', Object.values(person));
+// CREATING ARRAY FROM OBJECT
+
+const arr2 = [2, 4, 8, 17, 5, 9, 11, 4, 14, 2, 11];
+
+// REMOVE DUPLICATE ELEMENTS FROM ARRAY
+console.log('arr2>>>', arr2, [...new Set(arr2)]);
+// REMOVE DUPLICATE ELEMENTS FROM ARRAY
+
+const objArr = [
+  {
+    id: 1,
+    name: 'Leanne Graham',
+    username: 'Bret',
+    email: 'Sincere@april.biz',
+    phone: '1-770-736-8031 x56442',
+    website: 'hildegard.org',
+    age: 32,
+  },
+  {
+    id: 2,
+    name: 'Ervin Howell',
+    username: 'Antonette',
+    email: 'Shanna@melissa.tv',
+    phone: '010-692-6593 x09125',
+    website: 'anastasia.net',
+    age: 23,
+  },
+  {
+    id: 3,
+    name: 'Clementine Bauch',
+    username: 'Samantha',
+    email: 'Nathan@yesenia.net',
+    phone: '1-463-123-4447',
+    website: 'ramiro.info',
+    age: 26,
+  },
+  {
+    id: 4,
+    name: 'Patricia Lebsack',
+    username: 'Karianne',
+    email: 'Julianne.OConner@kory.org',
+    phone: '493-170-9623 x156',
+    website: 'kale.biz',
+    age: 28,
+  },
+  {
+    id: 5,
+    name: 'Chelsey Dietrich',
+    username: 'Kamren',
+    email: 'Lucio_Hettinger@annie.ca',
+    phone: '(254)954-1289',
+    website: 'demarco.info',
+    age: 35,
+  },
+  {
+    id: 6,
+    name: 'Clementine Bauch',
+    username: 'Samantha',
+    email: 'Nathan@yesenia.net',
+    phone: '1-463-123-4447',
+    website: 'ramiro.info',
+    age: 26,
+  },
+  {
+    id: 7,
+    name: 'Ervin Howell',
+    username: 'Antonette',
+    email: 'Shanna@melissa.tv',
+    phone: '010-692-6593 x09125',
+    website: 'anastasia.net',
+    age: 23,
+  },
+];
+
+
+// REMOVE DUPLICATE ELEMENT FROM ARRAY OF OBJECTS
+const filteredUnique = objArr.filter((elmm, index) => {
+  return index === objArr.findIndex((elm) => elm.name === elmm.name);
+});
+
+console.log('filteredUnique>>>>', filteredUnique);
+// REMOVE DUPLICATE ELEMENT FROM ARRAY OF OBJECTS
+
+// SORTING ARRAY OF OBJECTS
+objArr.sort(function (a, b) {
+  if (a.age < b.age) {
+    return -1;
+  }
+  if (a.age > b.age) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log('sresult>>>', objArr);
+// SORTING ARRAY OF OBJECTS
+
+
+// REVERSE STRING CODE
+
+const sampleStr = 'Hello';
+console.log(sampleStr);
+const reverseArr = [];
+let strlen = sampleStr.length;
+for (let index = 0; index < sampleStr.length; index++) {
+  --strlen;
+  const element = sampleStr[strlen];
+  reverseArr.push(element);
+}
+console.log(reverseArr.join(''));
+// REVERSE STRING CODE
+
+
 // SLICE : USED TO TAKE SOME VALUES FROM ARRAY. DO NOT CHANGE THE ACTUAL ARRAY
 console.log(arr.slice(2));
 console.log(arr.slice(2, 4));
